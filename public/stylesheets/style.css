@@ -5832,7 +5832,16 @@ a.full_link {
 
 @media(max-width: 768px) {
 	.tas_fn_hero .fn_title {
-		font-size: 50px;
+		font-size: 30px;
+		letter-spacing: 10px;
+	}
+
+	.tas_fn_hero .fn_desc {
+		padding: 0;
+		font-size: 20px;
+		line-height: 1.3333;
+		max-width: 700px;
+		margin: 0 auto;
 	}
 
 	.tas_fn_mosaic ul {
