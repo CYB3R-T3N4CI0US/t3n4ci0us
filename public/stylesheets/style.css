@@ -5975,6 +5975,10 @@ a.full_link {
 	.tas_fn_drops li {
 		width: 100%;
 	}
+
+	.typedtext {
+		font-size: 20px;
+	}
 }
 
 @media(max-width: 600px) {
