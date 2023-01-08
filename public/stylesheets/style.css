@@ -5990,6 +5990,14 @@ a.full_link {
 		flex-direction: column;
 	}
 
+	.tas_fn_hero .fn_desc {
+		padding: 0;
+		font-size: 15px;
+		line-height: 1.3333;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
 	.tas_fn_comments .comment-avatar {
 		margin-right: 0;
 		margin-bottom: 14px;
