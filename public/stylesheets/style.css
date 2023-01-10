@@ -2272,7 +2272,8 @@ a.full_link {
 }
 
 .tas_fn_pagetitle .bg_color {
-	background-color: rgba(0, 0, 0, 0.85);
+	/* background-color: rgba(0, 0, 0, 0.85); */
+	background-color: #282b30;
 }
 
 .tas_fn_pagetitle .pt_content {
@@ -2733,7 +2734,8 @@ a.full_link {
 
 .tas_fn_pagination span:hover,
 .tas_fn_pagination a:hover {
-	border-color: #777;
+	/* border-color: #777; */
+	border-color: #282b30;
 	transform: translateY(-3px);
 }
 
@@ -3392,7 +3394,8 @@ a.full_link {
 }
 
 .tas_fn_blog_page {
-	background-color: #111;
+	/* background-color: #111; */
+	background-color: #1e2124;
 	padding: 150px 0 145px;
 }
 
