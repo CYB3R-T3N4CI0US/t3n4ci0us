@@ -4,115 +4,37 @@ var tasFilterArray		= [];
   "use strict";
   
   
-	var Frenifytas = {
+	var tas = {
 
 		init: function(){
-			Frenifytas.animatedText();
-			Frenifytas.imgToSVG();
-			Frenifytas.BgImg();
+			tas.animatedText();
+			tas.imgToSVG();
+			tas.BgImg();
 			
 			
-			Frenifytas.activeNavigation();
-			Frenifytas.headerTrigger();
-			Frenifytas.menuFixer();
-			Frenifytas.timeLine();
-			Frenifytas.movingBlog();	
-			Frenifytas.navFixer();
-			Frenifytas.anchor();
-			Frenifytas.movingTextForNav();
-			Frenifytas.filterItems();
-			Frenifytas.applyFilter();
-			Frenifytas.magnific();
-			Frenifytas.progressTotop();
-			Frenifytas.productModal();
-			Frenifytas.contactForm();
-			Frenifytas.moreCategories();
-			Frenifytas.totop();
-			Frenifytas.vegasSlider();
-			Frenifytas.heroJarallaxSlider();
-			Frenifytas.subscribe();
-			Frenifytas.qnt();
-			Frenifytas.countdown();
+			tas.activeNavigation();
+			tas.headerTrigger();
+			tas.menuFixer();
+			tas.timeLine();
+			tas.movingBlog();	
+			tas.navFixer();
+			tas.anchor();
+			tas.movingTextForNav();
+			tas.filterItems();
+			tas.applyFilter();
+			tas.magnific();
+			tas.progressTotop();
+			tas.productModal();
+			tas.contactForm();
+			tas.moreCategories();
+			tas.totop();
+			tas.vegasSlider();
+			tas.heroJarallaxSlider();
+			tas.subscribe();
+			tas.qnt();
+			tas.countdown();
 		},
-		
-		countdown: function(){
-			$('.tas_fn_countdown').each(function(){
-				var e = $(this),
-					t = e.data('type');
-				if(t === 'due_date'){
-				var countDownDate = new Date(e.data('date')).getTime();
-				}else if(t === 'ever'){
-					var days 	= parseInt(e.data('days')) * 24 * 3600,
-						hours	= parseInt(e.data('hours')) * 3600,
-						minutes	= parseInt(e.data('minutes')) * 60,
-						seconds	= parseInt(e.data('seconds'));
-					var ever	= days + hours + minutes + seconds;
-				}
-				var p = e.parent();
-				if(e.hasClass('boxed')){
-					e.after('<div class="tas_fn_boxed_countdown"><ul><li class="days"><div class="item"><h3></h3><span>Days</span></div></li><li class="hours"><div class="item"><h3></h3><span>Hours</span></div></li><li class="minutes"><div class="item"><h3></h3><span>Minutes</span></div></li><li class="seconds"><div class="item"><h3></h3><span>Seconds</span></div></li></ul></div>');
-					e.remove();
-				}
-				if(t === 'due_date'){
-					// Update the count down every 1 second
-					setInterval(function() {
-						// Get today's date and time
-						var now = new Date().getTime();
 
-						// Find the distance between now and the count down date
-						var distance = countDownDate - now;
-
-						// Time calculations for days, hours, minutes and seconds
-						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-						if(e.hasClass('boxed')){
-							days = ('0' + days).slice(-2);
-							hours = ('0' + hours).slice(-2);
-							minutes = ('0' + minutes).slice(-2);
-							seconds = ('0' + seconds).slice(-2);
-							p.find('.days h3').text(days);
-							p.find('.hours h3').text(hours);
-							p.find('.minutes h3').text(minutes);
-							p.find('.seconds h3').text(seconds);
-						}else{
-							var text = '';
-							if(days > 0){text += days + 'd: ';}
-							text += hours + 'h: ' + minutes + 'm: ' + seconds + 's';
-							e.text(text);
-						}
-						
-					}, 1000);
-				}else if(t === 'ever'){
-					setInterval(function(){
-						days 	= Math.floor(ever / 86400);
-						hours	= Math.floor((ever % 86400) / 3600);
-						minutes	= Math.floor((ever % 3600) / 60);
-						seconds	= Math.floor((ever % 60));
-							
-						if(e.hasClass('boxed')){
-							days = ('0' + days).slice(-2);
-							hours = ('0' + hours).slice(-2);
-							minutes = ('0' + minutes).slice(-2);
-							seconds = ('0' + seconds).slice(-2);
-							p.find('.days h3').text(days);
-							p.find('.hours h3').text(hours);
-							p.find('.minutes h3').text(minutes);
-							p.find('.seconds h3').text(seconds);
-						}else{
-							var text = '';
-							if(days > 0){text += days + 'd: ';}
-							text += hours + 'h: ' + minutes + 'm: ' + seconds + 's';
-							e.text(text);
-						}
-						ever--;
-					}, 1000);
-				}
-			});
-		},
-		
 		qnt: function(){
 			$('.qnt .decrease').off().on('click',function(){
 				var e = $(this),
@@ -147,7 +69,7 @@ var tasFilterArray		= [];
 				if(email === ''){
 					parent.find('.empty_notice').slideDown(500).delay(2000).slideUp(500);
 				}else{
-					if(Frenifytas.validateEmail(email)){
+					if(tas.validateEmail(email)){
 						$.post("modal/subscribe.php",{ ajax_email: email, ajax_message: message}, function(data) {
 							echoM.append(data);//Append returned message to message paragraph
 							echoM.append("<span class='contact_success'>" + success + "</span>");
@@ -274,7 +196,7 @@ var tasFilterArray		= [];
 					}
 				}
 			});
-			Frenifytas.showMore();
+			tas.showMore();
 		},
 		
 		showMore: function(){
@@ -438,7 +360,7 @@ var tasFilterArray		= [];
 		applyFilter: function(){
 			
 			// initialization isotope function to our items
-			Frenifytas.isotopeCollection();
+			tas.isotopeCollection();
 			
 			// left filter on click function
 			$('.tas_fn_filters .checkbox').off().on('click',function(){
@@ -488,10 +410,10 @@ var tasFilterArray		= [];
 					tasFilterArray.push(id);
 					
 					// recall image to svg functions, because we have added new button where has an svg icon
-					Frenifytas.imgToSVG();
+					tas.imgToSVG();
 					
 					// recall remove filter function, because we have added new filter
-					Frenifytas.removeFilter();
+					tas.removeFilter();
 				}
 				// if clicked item has already clicked and clicked second time
 				else{
@@ -521,13 +443,13 @@ var tasFilterArray		= [];
 				}
 				
 				
-				Frenifytas.recallGridAfterFiltering();
+				tas.recallGridAfterFiltering();
 				
 				return false;
 			});
 			
 			// call remove filter function
-			Frenifytas.removeFilter();
+			tas.removeFilter();
 		},
 		
 		recallGridAfterFiltering: function(clear){
@@ -577,7 +499,7 @@ var tasFilterArray		= [];
 				if(index !== -1){
 					tasFilterArray.splice(index, 1);
 				}
-				Frenifytas.recallGridAfterFiltering();
+				tas.recallGridAfterFiltering();
 				return false;
 			});
 			
@@ -591,7 +513,7 @@ var tasFilterArray		= [];
 				resultBox.find('.result_item').remove();
 				e.remove();
 				filterBox.find('.checkbox').removeClass('selected').find('input[type="checkbox"]').prop('checked','');
-				Frenifytas.recallGridAfterFiltering('clear');
+				tas.recallGridAfterFiltering('clear');
 				return false;
 			});
 		},
@@ -678,7 +600,7 @@ var tasFilterArray		= [];
 			var initialSpace		= 110;
 			var spaceBetweenItems	= 230;
 			
-			Frenifytas.timelineClasses(allContentItems,allProgressItems,'initial');
+			tas.timelineClasses(allContentItems,allProgressItems,'initial');
 			
 			$.each(allProgressItems, function(i,e){
 				$(e).find('a').css({left: (initialSpace + (spaceBetweenItems * i)) + 'px'});
@@ -694,7 +616,7 @@ var tasFilterArray		= [];
 				if(!p.hasClass('active')){
 					var timeline 	= e.closest('.tas_fn_timeline');
 					var activeIndex = p.data('index');
-					Frenifytas.timelineClasses(allContentItems,allProgressItems,activeIndex);
+					tas.timelineClasses(allContentItems,allProgressItems,activeIndex);
 					
 					allProgressItems.removeClass('active');
 					p.addClass('active');
@@ -718,7 +640,7 @@ var tasFilterArray		= [];
 					var p			= progress.find('.active');
 					var activeIndex = (parseInt(p.data('index')) + 1) % progress.find('li').length;
 					if(activeIndex === 0){activeIndex = progress.find('li').length;}
-					Frenifytas.timelineClasses(allContentItems,allProgressItems,activeIndex);
+					tas.timelineClasses(allContentItems,allProgressItems,activeIndex);
 					console.log(activeIndex);
 
 					allProgressItems.removeClass('active');
@@ -757,7 +679,7 @@ var tasFilterArray		= [];
 					var p			= progress.find('.active');
 					var activeIndex = (parseInt(p.data('index')) - 1) % progress.find('li').length;
 					if(activeIndex === 0){activeIndex = progress.find('li').length;}
-					Frenifytas.timelineClasses(allContentItems,allProgressItems,activeIndex);
+					tas.timelineClasses(allContentItems,allProgressItems,activeIndex);
 					console.log(activeIndex);
 
 					allProgressItems.removeClass('active');
@@ -1015,21 +937,21 @@ var tasFilterArray		= [];
 	
 	// READY Functions
 	$(document).ready(function(){
-		Frenifytas.init();
+		tas.init();
 		setTimeout(function(){
-			Frenifytas.isotopeCollection();
+			tas.isotopeCollection();
 		},150);
 	});
 	
 	// RESIZE Functions
 	$(window).on('resize',function(){
-		Frenifytas.navFixer();
-		Frenifytas.progressTotop();
+		tas.navFixer();
+		tas.progressTotop();
 	});
 	
 	// LOAD Functions
 	$(window).on('load',function(){
-		Frenifytas.isotopeCollection();
+		tas.isotopeCollection();
 		
 		setTimeout(function(){
 			
@@ -1037,8 +959,8 @@ var tasFilterArray		= [];
 	});
 	
 	$(window).on('scroll',function(){
-		Frenifytas.menuFixer();
-		Frenifytas.progressTotop();
+		tas.menuFixer();
+		tas.progressTotop();
 	});
   	
 })(jQuery);

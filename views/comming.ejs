@@ -162,8 +162,46 @@
 			<div class="container">
 				<div class="soon_countdown">
 					<!-- <h3 class="tas_fn_countdown boxed" data-type="ever" data-date="February 12, 2023 00:00:00" data-days="33" data-hours="7" data-minutes="33" data-seconds="0">0d: 0h: 0m: 0s</h3> -->
+          <div id="time">
+            <!-- Days -->
+            <div class="circle" style="--clr: #6969aa;">
+              <div class="dots day_dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="dd"></circle>
+              </svg>
+              <div id="days">00<!-- <br><span>Days</span> --></div>
+            </div>
+            <!-- Hours-->
+            <div class="circle" style="--clr: #728fd6;">
+              <div class="dots hr_dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+              </svg>
+              <div id="hours">00</div>
+            </div>
+            <!-- Minutes -->
+            <div class="circle" style="--clr: #91adcf;">
+              <div class="dots min_dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+              </svg>
+              <div id="minutes">00</div>
+            </div>
+            <!-- Seconds -->
+            <div class="circle" style="--clr: #9d8cce;">
+              <div class="dots sec_dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+              </svg>
+              <div id="seconds">00</div>
+            </div>
+          </div>
 				</div>
-				<div class="soon_title">
+				<div class="soon_title" style="text-align: center;">
 					<h3>Wargame is Coming Soon</h3>
 					<p>Our wargame is coming soon. We are currently working on wargame. Please check again within a few days.</p>
 				</div>
@@ -176,6 +214,7 @@
     <script type="text/javascript" src="javascripts/plugins.js"></script>
     <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
     <script type="text/javascript" src="javascripts/init.js?ver=4.0"></script>
+    <script type="text/javascript" src="javascripts/countdown.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
