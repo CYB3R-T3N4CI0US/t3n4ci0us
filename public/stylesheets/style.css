@@ -2326,7 +2326,8 @@ a.full_link {
 }
 
 .tas_fn_collectionpage {
-	background-color: #111;
+	/* background-color: #111; */
+	background-color: #282b30;
 	padding: 150px 0;
 }
 
@@ -2366,7 +2367,8 @@ a.full_link {
 
 .tas_fn_filters .filter_item {
 	margin-bottom: 10px;
-	background-color: #0a0a0a;
+	/* background-color: #0a0a0a; */
+	background-color: #1e2124;
 	border-radius: 5px;
 	overflow: hidden;
 }
@@ -2523,7 +2525,8 @@ a.full_link {
 	left: 0;
 	border: 1px solid var(--extra-color);
 	border-radius: 3px;
-	background-color: #121212;
+	/* background-color: #121212; */
+	background-color: #1e2124;
 }
 
 .tas_fn_filters .checkbox .checkmark:after {
@@ -3363,7 +3366,8 @@ a.full_link {
 	width: 900px;
 	max-width: 100%;
 	height: auto;
-	background: #111;
+	/* background: #111; */
+	background: #1e2124;
 	border-radius: 10px;
 }
 
