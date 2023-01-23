@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="T3N4CI0US">
+    <meta name="author" content="T3N4CI0US">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title><%= title %></title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Highlight -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <!-- Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/plugins.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/style.css?ver=1.0">
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="home-static">
+<!-- Main -->
+<div class="tas_fn_main" data-footer-sticky="">
+    <!-- Wargame Modal -->
+    <div class="tas_fn_modal product_modal">
+        <div class="modal_in">
+            <div class="modal_closer">
+                <a href="#">
+                    <img src="images/svg/cancel.svg" alt="" class="fn__svg">
+                </a>
+            </div>
+            <div class="modal_content">
+                <div class="tas_fn_product_modal">
+                    <div class="img_item">
+                        <!-- Product's Image -->
+                    </div>
+                    <div class="content_item">
+                        <div class="tas_fn_title" data-align="left">
+                            <h3 class="fn_title"><!-- Product's Title --></h3>
+                            <div class="line"><span></span></div>
+                        </div>
+
+                        <div class="desc">
+                            <p><!-- Product's Description --></p>
+                        </div>
+
+                        <div class="buttons">
+                            <a href="/comming" target="_blank" class="tas_fn_button wargame">
+                                <span class="icon"><img src="images/svg/link.svg" alt="" class="fn__svg"></span>
+                                <span class="text">Wargame</span>
+                            </a>
+                            <a href="/comming" target="_blank" class="tas_fn_button discord">
+                                <span class="icon"><img src="images/svg/discord.svg" alt="" class="fn__svg"></span>
+                                <span class="text">Wargame Discord</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Wargame Modal End -->
+
+    <!-- Right Navigation -->
+    <div class="nav_overlay"></div>
+    <div class="tas_fn_nav">
+        <div class="trigger is-active">
+            <div class="trigger_in">
+                <span class="text">Close</span>
+                <span class="hamb">
+              <span class="hamb_a"></span>
+              <span class="hamb_b"></span>
+              <span class="hamb_c"></span>
+            </span>
+            </div>
+        </div>
+        <div class="nav_content">
+            <div class="nav_menu">
+                <ul>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="/">Home</a>
+                        <!-- Sub Menu
+                        <ul class="sub-menu">
+                          <li><a href="#"></a></li>
+                        </ul>
+                        -->
+                    </li>
+                    <li class="menu-item"><a href="/comming">Wargame</a></li>
+                    <li class="menu-item"><a href="/member">Member</a></li>
+                    <li class="menu-item">
+                        <a href="#">Research</a>
+                        <ul class="sub-menu">
+                            <li><a href="/pwnable">Pwnable</a></li>
+                            <li><a href="/reversing">Reversing</a></li>
+                            <li><a href="/web">Web</a></li>
+                            <li><a href="/forensic">Forensic</a></li>
+                            <li><a href="/crypto">Crypto</a></li>
+                            <li><a href="/cve">CVE</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">CTF[Write-up]</a>
+                        <ul class="sub-menu">
+                            <!-- <li><a href="#">2024</a></li> -->
+                            <li><a href="/2023">2023</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav_buttons">
+                <a href="/comming" class="tas_fn_button" target="_blank">
+                    <span class="icon"><img src="images/svg/link.svg" alt="" class="fn__svg"></span>
+                    <span class="text">Wargame</span>
+                </a>
+                <a href="/comming" class="tas_fn_button" target="_blank">
+                    <span class="icon"><img src="images/svg/discord.svg" alt="" class="fn__svg"></span>
+                    <span class="text">Wargame Discord</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Nav Footer -->
+        <div class="nav_footer">
+            <div class="nf_left">
+                <p>Copyright 2019. T3N4CI0US All rights reserved</p>
+            </div>
+            <div class="nf_right">
+                <div class="tas_fn_social_list">
+                    <ul>
+                        <li><a href="https://twitter.com/cyb3r_t3n4ci0us"><box-icon name='twitter' type='logo' color='#ffffff' ></box-icon></a></li>
+                        <li><a href="https://www.facebook.com/people/T3N4CI0US/100064062290144/"><box-icon name='meta' type='logo' color='#ffffff' ></box-icon></a></li>
+                        <li><a href="https://www.instagram.com/t3n4ci0us_official/"><box-icon name='instagram' type='logo' color='#ffffff' ></box-icon></a></li>
+                        <li><a href="https://github.com/CYB3R-T3N4CI0US"><box-icon name='github' type='logo' color='#ffffff' ></box-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Footer End -->
+    </div>
+    <!-- Right Navigation End -->
+
+    <!-- Header -->
+    <header class="tas_fn_header fixer">
+        <div class="container">
+            <div class="header_in">
+
+                <div class="logo">
+                    <a href="/">
+                        <!-- Logo -->
+                        <!-- <img src="images/logo.png" alt=""> -->
+                        <span class="logo">T3N4CI0US</span>
+                    </a>
+                </div>
+
+                <div class="trigger">
+                    <div class="trigger_in">
+                        <span class="text">Menu</span>
+                        <span class="hamb">
+                <span class="hamb_a"></span>
+                <span class="hamb_b"></span>
+                <span class="hamb_c"></span>
+              </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <div class="tas_fn_content">
+
+
+        <!-- Blog Single Page -->
+        <div class="tas_fn_blog_single tas_fn_single">
+
+
+            <!-- Single Content -->
+            <div class="single_content">
+
+                <div class="container" id="blog-single-content">
+                    <!-- Page With Sidebar -->
+                    <div class="tas_fn_wsidebar">
+
+                        <!-- Left Sidebar -->
+                        <div class="sidebar_left">
+
+                            <!-- Mini Items  -->
+                            <div class="tas_fn_minis">
+                                <div class="m_item">
+                                    <a href="#">Jan 23, 2023</a>
+                                </div>
+                                <div class="m_item">
+                                    <span>By <a href="#">Function</a></span>
+                                </div>
+                            </div>
+                            <!-- !Mini Items  -->
+
+                            <!-- Single Title -->
+                            <div class="single_title">
+                                <h2 class="fn_title">KCTF 2023 Write-up</h2>
+                                <div class="categories">
+                                    <a href="#">CTF Write-up</a>
+                                </div>
+                            </div>
+                            <!-- !Single Title -->
+
+
+                            <!-- Single Description -->
+                            <div class="single_desc">
+                                <h4>Reverse Engineering</h4>
+                                <h5>KrackMe 1.0 - 200</h5>
+                                <img style="width: 50%" src="/images/ctf/kctf/1.png" alt="1.png">
+                                <p>The krackme_1.out file was decompiled in IDA Pro and only the code necessary for FLAG was programmed in C.</p>
+                                <p class="tas_shell">
+                                    #include &lt;stdio.h&gt; <br>
+                                    #include &lt;string.h&gt; <br>
+                                    
+                                    int main(){ <br>
+                                        ⠀unsigned int i, j; <br>
+                                        ⠀short a[10], b[10]; <br>
+                                        ⠀char c[32] ="Oh My God ! What is that ?"; <br>
+                                        ⠀char d[48] = "You don't have access to KrackMe 1.0 !"; <br>
+                                        ⠀char e[72] = "Did you know, Bangladesh has the longest natural beach?..."; <br>
+                                        ⠀char s[36]; <br>
+                                        ⠀strcpy((char *)a, "mer`]MtGe"); <br>
+                                        ⠀strcpy((char *)&a[5], "aUG9UeDoU"); <br>
+                                        ⠀strcpy((char *)b, "(G~Ty_G{("); <br>
+                                        ⠀strcpy((char *)&b[5], "v}QlOto|s"); <br>
+                                        ⠀for ( i = 0; i < 9; ++i ){ <br>
+                                            ⠀⠀for(j=0; j<=255; j++){ <br>
+                                                ⠀⠀⠀⠀if ( *((unsigned char *)a + i) == ((unsigned char)38 ^ (unsigned char)j) ){ <br>
+                                                ⠀⠀⠀⠀⠀s[i]=j; <br>
+                                                ⠀⠀⠀⠀} <br>
+                                                ⠀⠀⠀⠀if ( *((unsigned char * )&a[5] + i) == ((unsigned char)10 ^ (unsigned char)j) ){ <br>
+                                                ⠀⠀⠀⠀⠀s[i+9]=j; <br>
+                                                ⠀⠀⠀⠀} <br>
+                                                ⠀⠀⠀⠀if ( *((unsigned char *)b + i) == ((unsigned char)24 ^ (unsigned char)j) ){ <br>
+                                                ⠀⠀⠀⠀⠀s[i+18]=j; <br>
+                                                ⠀⠀⠀⠀} <br>
+                                                ⠀⠀⠀⠀if ( *((unsigned char *)&b[5] + i) == ((unsigned char)14 ^ (unsigned char)j) ){ <br>
+                                                ⠀⠀⠀⠀⠀s[i+27]=j; <br>
+                                                ⠀⠀⠀⠀} <br>
+                                                ⠀⠀} <br>
+                                                ⠀} <br>
+                                                ⠀for(i=0; i<=35; i++){ <br>
+                                                ⠀⠀printf("%c",s[i]); <br>
+                                                ⠀} <br>
+                                            }
+                                </p>
+                                <h6>FLAG : <span class="tas_code">KCTF{kRaCk_M3_oNe_0_fLaG_c0xs_bAzar}</span></h6>
+                                <hr>
+                                <br>
+                                <h4>Cryptography</h4>
+                                <h5>Xorathrust - 25</h5>
+                                <img style="width: 50%;" src="/images/ctf/kctf/2.png" alt="2.png">
+                                <p>In the encrypt.py file, the encrypt method was found to be xored with 0x66.</p>
+                                <p class="tas_shell">
+                                    enc = open("flag.enc.txt","r").read() <br>
+                                    for i in enc: <br>
+                                        ⠀ i = chr(ord(i)^0x66) <br>
+                                        ⠀ print(i,end='') <br>
+                                </p>
+                                <p>In the encrypt.py file, the encryption method was found to be xored with 0x66. I programmed a python code to double it</p>
+                                <h6>FLAG : <span class="tas_code">KCTF{ju5t_4_b45ic_x0r}</span></h6>
+                                <br>
+                                <br>
+                                <h5>Factorie - 50</h5>
+                                <p class="tas_code">n: 2174096211032823084932239036566496093206280423</p>
+                                <p>In the factory.txt file, there were prime numbers that might be in the database.<br> I programmed a python code to get prime numbers from the database.</p>
+                                <p class="tas_shell">
+                                    import requests <br>
+                                    from bs4 import BeautifulSoup <br>
+                                    n = open("factory.txt").read().split()[1] <br><br>
+                                    html = requests.get("http://factordb.com/index.php?query="+n).text <br>
+                                    html = BeautifulSoup(html,"html.parser").find_all("font") <br>
+                                    small_num = html[1].string <br>
+                                    big_num = html[2].string <br> <br>
+                                    flag = "KCTF{" + small_num + "-" + big_num + "}" <br>
+                                    print(flag)
+                                </p>
+                                <h6>FLAG : <span class="tas_code">KCTF{39434538531451803895327-55131777675015246472249}</span></h6>
+                                <br>
+                                <br>
+                                <h5>Encode Mania - 150</h5>
+                                <p class="tas_shell">JIU3DMNRWGQ3DOMBUHA2TSNZZG42DMNRVHE2TKNRUGZATIQRTGEZTSNRRGUZDGMRUIU3DMNRWGQ3TKMRUHA2TSNZZG4ZTERRVG43EENRUGZATKOBTGM3TQNSDGUZDGMRUIUSDMN3DMNRWGQ3TINRUHA2TSMZRGM4TGOBVHEZTANRUGZATIQRXIEZTSNSCGUZDGMRUIQ3TENJQGMZDIRJUHA2TSNZZG42DMNRVHEZTANRUGZATIORXIEZTSNRZGUZDGMRUIUBDMNRWG03IZUHAZTSMZRGMATGOBVHEZTANRUGZATIORTGEZTSNRRGU3DGMRUIU3DMINRWGQ3TKMRUHA2TSNZZG4ZTERRVG43EENRUGZATKOBTGM3TONSCGUZDGMRUIOSTENJOGMZDIONUHACTS2GMYTMQZUHA2TSMZRGM4TGOBVHE3EENRUGZATIQRXIEZTSNSEGUZDGMRUIQ3TENJYGMYTMOZUHA2TSMZRGM4TGOBVHE3EENRUGZATKOBTGM3TQNSDGUZDGMRUIQ3TEN/YGMYTOMBTMNJQGQ3TINRUHA2TSMZTGZDDGOBVHE2TCM2EGNCA====</p>
+                                <p>I checked the contents of the encode_mania.txt file and found that it was encoded with base32.</p>
+                                <img style="width: 50%" src="/images/ctf/kctf/3.png" alt="3.png">
+                                <p>I tried to decode through cyberchef, but I found out that there was a different base encoding, and I programmed the code to decode it in Python.</p>
+                                <p class="tas_shell">
+                                    from base64 import * <br><br>
+                                    base16 = set("0123456789ABCDEFabcdef") <br>
+                                    base32 = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ234567=") <br>
+                                    base64 = set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=") <br>
+                                    base85 = set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&()*+-;<=>?@^_`{|}~")<br><br>
+                                    enc = open("artifacts/encode_mania.txt","r").read().encode() <br><br>
+                                    while True: <br>
+                                    ⠀string = enc.decode("UTF-8")<br><br>
+                                    ⠀if all(x in base16 for x in string): <br>
+                                    ⠀⠀enc = b16decode(enc) <br><br>
+                                    ⠀elif all(x in base32 for x in string):<br>
+                                    ⠀⠀enc = b32decode(enc)<br><br>
+                                    ⠀elif all(x in base64 for x in string):<br>
+                                    ⠀⠀enc = b64decode(enc)<br><br>
+                                    ⠀else:<br>
+                                    ⠀⠀enc = b85decode(enc)<br><br>
+                                    ⠀if "KCTF{" in enc.decode("UTF-8"): <br>
+                                    ⠀⠀print(enc.decode("UTF-8"))<br><br>
+                                    ⠀⠀break<br>
+                                </p>
+                                <p>I got FLAG through the above code</p>
+                                <h6>FLAG : <span class="tas_code">KCTF{dfs_0r_b4u7e_f04c3}</span></h6>
+                                <hr>
+                                <br>
+                                <h4>Forensics</h4>
+                                <h5>Go Deep! - 400</h5>
+                                <img style="width: 50%" src="/images/ctf/kctf/4.png" alt="4.png">
+                                <p>I figured out that there is no FLAG in the sea.jpg file. <br>The file size seems to be too large compared to the contents of the file, so I analyzed it through binwalk</p>
+                                <img style="width: 50%" src="/images/ctf/kctf/5.png" alt="5.png">
+                                <p>I confirmed that there was a zip file, proceeded with file carving, and unzipped it.</p>
+                                <img style="width: 50%" src="/images/ctf/kctf/6.png" alt="6.png">
+                                <p>There was a deep file in the compressed file, and I opened the file with notepad. JFIF, IDHR, sRGB, and gAMA stood out, and it was found that the PNG file caused an error in recognizing the file through the header signature in JFIF.
+                                    I changed the extension to png to use pngcheck.</p>
+                                <img style="width: 50%" src="/images/ctf/kctf/7.png" alt="7.png">
+                                <p>However, it was not possible to confirm. Changed the file header signature to PNG header signature through HxD.</p>
+                                <img style="width: 50%" src="/images/ctf/kctf/8.png" alt="8.png">
+                                <img style="width: 50%; margin-top: 10px;" src="/images/ctf/kctf/9.png" alt="9.png">
+                                <p>changed it, but the image seems to be cut off, so I programmed a python code that changes the width and height to fit the crc.
+                                    The programming code below goes from carving a file to changing the height and width to match the crc value and displaying the image
+                                </p>
+                                <p class="tas_shell">
+                                    from zipfile import * <br>
+                                    from zlib import crc32 <br>
+                                    from struct import pack <br>
+                                    from tkinter import * <br> <br>
+                                    data = open("sea.jpg","rb").read()[0x8D19BF:] <br><br>
+                                    # file caving <br>
+                                    open("flag.zip","wb").write(data) <br> <br>
+                                    zip = ZipFile("./flag.zip","r").extractall("./") <br> <br>
+                                    with open("deep","rb") as f: <br>
+                                    ⠀⠀⠀deep = bytearray(f.read()) <br>
+                                    ⠀⠀⠀deep[0:0xA] = b"\x89\x50\x4E\x47\x0D\x0A\x1A\x0A\x00\x00"<br><br>
+
+                                    ⠀⠀⠀ihdr = bytearray(deep[0xC:0x1D])<br>
+                                    ⠀⠀⠀crc = int.from_bytes(deep[0x1D:0x21],"big") <br>
+                                    ⠀⠀⠀#crc checker <br>
+                                    ⠀⠀⠀for x in range(1,2000): <br>     
+                                    ⠀⠀⠀⠀⠀height = pack('i',x)[::-1]     <br>        
+                                    ⠀⠀⠀⠀⠀for y in range(1,4000): <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀width = pack('i',y)[::-1] <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀ihdr[8:12] = height <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀ihdr[4:8] = width <br><br>
+                                    ⠀⠀⠀⠀⠀⠀⠀if crc32(ihdr) == crc: <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀deep[0xC:0x1D]=ihdr <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀open('flag','wb').write(deep) <br><br>
+                                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀root= Tk()<br>
+                                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀img = PhotoImage(file="flag")<br>
+                                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀Label(root,image=img).pack()<br>
+                                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀root.mainloop()<br>
+                                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀exit()<br>
+                                </p>
+                                <p>The result of running the above code showed an image with a flag</p>
+                                <img style="width: 50%" src="/images/ctf/kctf/10.png" alt="10.png"> 
+                                <p>FLAG : <span class="tas_code">KCTF{dfs_0r_b4u7e_f04c3}</span></p>
+                                <hr>
+                                <br>
+                                <h4>Misc</h4>
+                                <h5>Dirt - 50</h5>
+                                <img style="width: 50%" src="/images/ctf/kctf/11.png" alt="11.png"> 
+                                <p>When I checked the inside of the provided directory, there was a directory and the directory name was '}', so I thought there was a flag, and I tried "ls -R"</p>
+                                <img style="width: 20%" src="/images/ctf/kctf/12.png" alt="12.png"> 
+                                <p>At the end, I figured out that there is a flag format, which is KCTF, and programmed a python code that outputs FLAG to make it easier to see.</p>
+                                <p class="tas_shell">
+                                    import os<br><br>
+                                    flag = []<br>
+                                    os.chdir("./challenge") <br><br>
+                                    while True:<br>
+                                    ⠀⠀⠀try :<br>
+                                    ⠀⠀⠀⠀⠀Dir = os.listdir()[0] <br>
+                                    ⠀⠀⠀⠀⠀flag += Dir<br>
+                                    ⠀⠀⠀except IndexError:<br>
+                                    ⠀⠀⠀⠀⠀flag = flag[::-1]<br>
+                                    ⠀⠀⠀⠀⠀break<br>
+                                    ⠀⠀⠀os.chdir(Dir)<br><br>
+                                    print("".join(flag)) <br>
+                                </p>
+                                <p>FLAG : <span class="tas_code">KCTF{f0ld3rs_1n51d3_f0ld3rs}</span></p>
+                                <hr>
+                                <br>
+                                <h4>Networking</h4>
+                                <h5>Hello - 300</h5>
+                                <img style="width: 50%" src="/images/ctf/kctf/13.png" alt="13.png"> 
+                                <p>There was only a dns query packet in the packet file, so while looking at each udp stream, I checked the list of subdomains for queries that were assumed to be base64</p>
+                                <img style="width: 50%" src="/images/ctf/kctf/14.png" alt="14.png"> 
+                                <img style="width: 50%; margin-top: 10px;" src="/images/ctf/kctf/15.png" alt="15.png"> 
+                                <p>I decoded it with base64, but I found out that it was encrypted with a certain rule, and through Sir vignere given in the problem description, I inferred that the key was to decode Vigenère with Knight. This was programmed with Python code.</p>
+                                <p class="tas_shell">
+                                    from scapy.all import * <br>
+                                    import base64 <br>
+                                    from string import * <br>
+                                    enc = '' <br>
+                                    packet = rdpcap("find-me.pcapng")[DNS] <br>
+                                    for i in packet: <br>
+                                    ⠀⠀if i[IP].src == "8.8.8.8": <br>
+                                    ⠀⠀⠀query = i[DNSQR].qname<br>
+                                    ⠀⠀⠀query = query.decode()<br>
+                                    ⠀⠀⠀if query.count('.') == 3:<br>
+                                    ⠀⠀⠀⠀⠀enc += query.split('.')[0]<br><br>
+                                    enc = base64.b64decode(enc).decode()<br>
+                                    flag = ''<br>
+                                    i = 0<br>
+                                    n = 0<br><br>
+                                    while True:<br>
+                                    ⠀⠀⠀if i != len(enc): <br>
+                                    ⠀⠀⠀⠀⠀if enc[i] in ascii_uppercase: <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀key = "KNIGHT"[n % 6] <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀flag += chr((ord(enc[i]) - ord(key)) % 26 + ord('A')) <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀n += 1 <br>  
+                                    ⠀⠀⠀⠀⠀elif enc[i] in ascii_lowercase: <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀key = "knight"[n % 6]<br>
+                                    ⠀⠀⠀⠀⠀⠀⠀n += 1 <br> 
+                                    ⠀⠀⠀⠀⠀⠀⠀flag += chr((ord(enc[i]) - ord(key)) % 26 + ord('a')) <br> 
+                                    ⠀⠀⠀⠀⠀else: <br>
+                                    ⠀⠀⠀⠀⠀⠀⠀flag += enc[i]<br><br>
+                                    ⠀⠀⠀⠀⠀i+=1<br>
+                                    ⠀⠀⠀else:<br>
+                                    ⠀⠀⠀⠀⠀break<br><br>
+                                    print(''.join(flag))<br>
+                                </p>
+                                <p>FLAG : <span class="tas_code">KCTF{h1_th3n_wh0_ar3_y0u}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="tas_fn_totop">
+        <span class="arrow"><img src="../images/svg/right-arr.svg" alt="" class="fn__svg"></span>
+        <span class="circle"><img src="../images/svg/circle.svg" alt="" class="fn__svg"></span>
+    </a>
+</div>
+<!-- Scripts -->
+<script type="text/javascript" src="../javascripts/jquery.js"></script>
+<script type="text/javascript" src="../javascripts/plugins.js"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+<script type="text/javascript" src="../javascripts/init.js?ver=4.0"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

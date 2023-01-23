@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-    res.send('respond with a resource');
+router.get('/kctf', function(req, res, next) {
+    res.render('write/kctf', { title: 'T3N4CI0US | KCTF 2023' });
 });
 
 module.exports = router;
