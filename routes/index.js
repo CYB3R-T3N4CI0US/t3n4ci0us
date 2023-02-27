@@ -44,8 +44,8 @@ router.get('/2023', function(req, res, next) {
 
 
 
-router.get('/comming', function(req, res, next) {
-  res.render('comming', { title: 'T3N4CI0US | Comming Soon' });
+router.get('/coming', function(req, res, next) {
+  res.render('coming', { title: 'T3N4CI0US | Coming Soon' });
 });
 
 module.exports = router;
